@@ -1,0 +1,24 @@
+[phases.setup]
+nixPkgs = ["python311"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[start]
+cmd = "python assistant_bot.py"
+```
+
+---
+
+**OR easier fix bro** — just add a `runtime.txt` file:
+```
+python-3.11.0
+```
+
+---
+
+**Do this 👇**
+
+Create `runtime.txt` in your bot folder:
+```
+python-3.11.0
